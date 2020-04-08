@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Form Validation</title>
+<link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+<div class="container">
+<div class="formMain">
+<form
+class="box-register"
+align="center"
+name="signUpForm"
+onsubmit="return validateForm()"
+>
+<h1>Registration Form</h1>
+<hr>
+<input type="text"  class = "hovercl" placeholder="Enter Name" name="name" /><br /><br />
+<input type="text"  class = "hovercl" placeholder="Enter User Name" name="uname" /><br /><br />
+<input type="text"  class = "hovercl" placeholder="Enter Phone Number" name="pnum" /><br /><br />
+<input type="email" class = "hovercl"  placeholder="Enter Email Id" name="email" /><br /><br />
+
+<input type="radio"  class = "hovercl" name="gender" value="male" checked /><span>Male</span>
+<input type="radio"  class = "hovercl" name="gender" value="female" /><span>Female</span>
+<input type="radio"  class = "hovercl" name="gender" value="other" /><span>Other</span>
+<br /><br />
+<input type="date" class = "hovercl"  name="bday" />
+<br /><br />
+<input type="text" class = "hovercl"  placeholder="Enter Address" name="address" /><br /><br />
+<input
+type="password"
+ class = "hovercl" placeholder="Enter Password"
+name="password"
+/><br /><br />
+<button type="submit">Login</button>
+</form>
+</div>
+</div>
+<script src="./validationscript.js"></script>
+</body>
+</html>
